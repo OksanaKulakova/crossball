@@ -1,0 +1,83 @@
+.player {
+    background: linear-gradient(238.37deg, rgba(90, 96, 231, 0.35) 6.34%, rgba(30, 30, 40, 0) 103.77%), #2C2C2C;
+    border-radius: 10px;
+    padding: 20px;
+
+    &-photo {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+
+    &-body {
+        display: flex;
+        margin-bottom: 50px;
+    }
+
+    &-info {
+        margin-left: 10px;
+    }
+
+    &-name {
+        font-size: 20px;
+        line-height: 110%;
+        color: #FFFFFF;
+    }
+
+    &-ratio {
+        font-size: 30px;
+        line-height: 110%;
+        color: #FFFFFF;
+
+        &-up {
+            top: -1em;
+            background: #5A60E7;
+            border-radius: 10px;
+            font-size: 12px;
+            color: #EFEFFD;
+            padding-left: 7px;
+            padding-right: 14px;
+            background-image: url("/src/assets/images/ratioup.svg");
+            background-repeat: no-repeat;
+            background-position: center right;
+        }
+    }
+
+    &-edit {
+        padding-left: 20px;
+        background-image: url("/src/assets/images/edit.svg");
+        background-repeat: no-repeat;
+        background-position: center left;
+        font-size: 12px;
+        line-height: 110%;
+        text-decoration-line: underline;
+        color: $blue;
+    }
+
+    &-edit:hover {
+        color: #EFEFFD;
+    }
+
+    &-share {
+        display: none;
+    }
+}
+
+@media screen and (max-width: $max-phone-width) {
+    .player {
+        position: relative;
+        padding: 10px 20px;
+        border-radius: 0;
+
+        &-body {
+            margin-bottom: 20px;
+        }
+
+        &-share {
+            position: absolute;
+            display: block;
+            bottom: 4px;
+            right: 4px;
+        }
+    }
+}

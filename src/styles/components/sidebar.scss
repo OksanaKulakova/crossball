@@ -1,0 +1,17 @@
+.sidebar {
+    width: 295px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px #E9E9E9;
+    border-radius: 10px;
+
+    &-menu {
+        padding: 50px 20px 230px;
+    }
+}
+
+@media screen and (max-width: $max-phone-width) {
+    .sidebar {
+        width: 100%;
+        border-radius: 0;
+    }
+}

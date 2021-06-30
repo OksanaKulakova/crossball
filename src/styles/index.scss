@@ -4,20 +4,53 @@
 @import './fonts.scss';
 
 // VARIABLES
-$main-color: tomato;
+$base-font-size: 16px;
+$text-color: #222222;
+$blue: #5A60E7;
+
+$max-phone-width: 767px;
+
 
 // INITIAL
 
+* {
+  font-family: "Proxima Nova", sans-serif;
+  color: $text-color;
+}
+
+body {
+  background: #E5E5E5;
+}
+
 .container {
   margin: 0 auto;
+  padding: 0 40px;
   max-width: 1440px;
+}
+
+@media screen and (max-width: $max-phone-width) {
+  .container {
+    padding: 0;
+  }
+}
+
+a {
+  text-decoration: none;
+  transition: all .5s ease-out;
+
+  &:hover {
+    color: $blue;
+  }
 }
 
 // FILES
 
-@import 'components/main';
+@import 'components/header';
 @import 'components/logo';
-
-
-
+@import 'components/main';
+@import 'components/menu';
+@import 'components/sidebar';
+@import 'components/player';
+@import 'components/share';
+@import 'components/stat'
 

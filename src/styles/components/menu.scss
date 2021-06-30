@@ -1,0 +1,22 @@
+.menu {
+    list-style-type: none;
+    padding-left: 0;
+
+    &-item {
+        display: inline;
+        margin-right: 50px;
+
+        &-link {
+            font-size: $base-font-size;
+        }
+    }
+    &-item:last-child {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: $max-phone-width) {
+    .menu {
+        display: none;
+    }
+}

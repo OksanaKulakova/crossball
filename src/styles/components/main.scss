@@ -1,9 +1,16 @@
 .main {
-  &-title {
-    color: $main-color;
-    font-size: 24px;
-    margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 247px;
+
+  &-content {
+    width: calc(100% - 345px);
+  }
+}
+
+@media screen and (max-width: $max-phone-width) {
+  .main {
+    padding-top: 0;
   }
 }

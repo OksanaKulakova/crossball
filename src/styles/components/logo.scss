@@ -1,9 +1,19 @@
 .logo {
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
+  width: 345px;
+}
 
-  &__img {
-    width: 100%;
+.logo-img {
+  width: 187px;
+  height: 35px;
+}
+
+@media screen and (max-width: $max-phone-width) {
+  .logo {
+    width: 150px;
+  }
+
+  .logo-img {
+    width: 120px;
+    height: 20px;
   }
 }
